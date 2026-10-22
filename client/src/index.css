@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #102a43;
+  --color-ink: #243b53;
+  --color-mist: #f6f8fb;
+  --color-mint: #b8e8da;
+  --color-teal: #167a71;
+  --color-coral: #f38b74;
+  --color-sun: #ffcf6e;
+  --font-sans: "Aptos", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { min-width: 320px; background: #f6f8fb; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #243b53;
+  background: #f6f8fb;
+  font-family: "Aptos", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+}
+
+button, input { font: inherit; }
+button { cursor: pointer; }
+
+.grid-noise {
+  background-image: linear-gradient(rgba(16, 42, 67, .04) 1px, transparent 1px), linear-gradient(90deg, rgba(16, 42, 67, .04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.hero-orb {
+  background: radial-gradient(circle at 35% 25%, #dff8ec 0 19%, transparent 20%), radial-gradient(circle at 66% 57%, #ffdf9e 0 17%, transparent 18%), radial-gradient(circle at 45% 72%, #b8e8da 0 27%, #167a71 28% 38%, #102a43 39% 100%);
+}
+
+.focus-ring:focus-visible {
+  outline: 3px solid rgba(22, 122, 113, .32);
+  outline-offset: 2px;
+}
+
+.card-shadow { box-shadow: 0 18px 50px rgba(16, 42, 67, .09); }
+
+.score-ring {
+  background: conic-gradient(#167a71 calc(var(--score) * 1%), #dce5ec 0);
+}
